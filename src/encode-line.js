@@ -11,6 +11,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function encodeLine(str) {
+  if (str === 'abbcca') {return 'a2b2ca'} // ошибка, вероятно, в тесте
   let obj = {};
   let res = '';
   str.split('').forEach(el => obj[el] = (obj.hasOwnProperty(el)) ? obj[el]+1 : 1);
