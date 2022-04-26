@@ -14,7 +14,7 @@ function encodeLine(str) {
   let obj = {};
   let res = '';
   str.split('').forEach(el => obj[el] = (obj.hasOwnProperty(el)) ? obj[el]+1 : 1);
-  for (key in obj) {res += obj[key] + key}; 
+  for (key in obj) {res += ((obj[key] == 1) ? '' : obj[key]) + key}; 
   return res;
 }
 

@@ -11,6 +11,7 @@ describe('Encode line', () => {
     assert.strictEqual(encodeLine('aaaatttt'), '4a4t');
     assert.strictEqual(encodeLine('aabbccc'), '2a2b3c');
     assert.strictEqual(encodeLine('abbcca'), 'a2b2ca');
+//    assert.strictEqual(encodeLine('abbcca'), '2a2b2c');
     assert.strictEqual(encodeLine('xyz'), 'xyz');
     assert.strictEqual(encodeLine(''), '');
   });
